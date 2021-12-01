@@ -1,0 +1,4 @@
+function [outputArg1,outputArg2] = get_v0y(time,distance)
+    
+end
+

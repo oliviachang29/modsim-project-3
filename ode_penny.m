@@ -4,8 +4,8 @@ function [T,M,did_hit_piano,end_time] = ode_penny(initial_speed, theta_in_degree
     
     % margin of error on distance thrown (length of piano key / 2)
     % creates a range of x positions that make did_hit_piano true
-%     distance_to_piano_margin_error = 0.015/2; % meters
-    distance_to_piano_margin_error = 0.5; % meters
+    distance_to_piano_margin_error = 0.015/2; % meters
+%     distance_to_piano_margin_error = 0.1; % meters
     distance_to_piano_lower_bound = distance_to_piano - distance_to_piano_margin_error;
     distance_to_piano_upper_bound = distance_to_piano + distance_to_piano_margin_error;
     
