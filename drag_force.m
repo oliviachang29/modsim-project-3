@@ -1,9 +1,8 @@
 function res = drag_force(V)
     rho = 1.3; % kg / m^3, density of air at sea level
 
-    % THESE NEED TO BE CHANGED - these were from baseball simulation
-    drag_coeff = 0.3; % dimensionless
-    A = 0.0042; % m^2 cross ectional area of baseball
+    drag_coeff = 1.17; % dimensionless, measured from studies
+    A = 2.9e-5; % m^2, area of penny opposite of motion
     
     v = norm(V); % m/s, magnitude of velocity
     
