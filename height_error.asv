@@ -1,0 +1,11 @@
+function error = height_error(angle,speed)
+    piano_distance = 1; % m, piano distance 
+    [T, M, did_hit_piano,end_time] = ode_penny(i,j);
+end
+
+% function error = error_height(speed0, angle)
+%     % Compute the error associated with baseball final height
+%     wall_height = 11; % Green Monster height (m)
+%     [~, State] = ode_baseball(speed0, angle);
+%     error = State(end, 2) - wall_height; % error (m)
+% end
