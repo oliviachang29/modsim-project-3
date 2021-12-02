@@ -24,9 +24,10 @@ function [T,M,did_hit_piano,end_time] = ode_penny(initial_speed, theta_in_degree
     V = [vx; vy];
     W = [P; V];
     
-    % set time span (10 is arbitrarily large but may need to change this in
+    % set time span (100 is arbitrarily large but may need to change this in
     % order to get greater time lengths)
-    t_span = [0 10];
+    max_song_length = 100;
+    t_span = [0 max_song_length];
     
     % stop the function when it hits the piano
     options = odeset('Events', @event_func);
