@@ -1,8 +1,0 @@
-function res = time_error(angle,time)
-    %
-    speed = find_speed0(angle);
-    %
-    [~,~,~,end_time] = ode_penny(angle, speed);
-    res = end_time-time;
-end
-
