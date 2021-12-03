@@ -1,4 +1,4 @@
-function speed0 = find_speed0(angle)
+function speed0 = find_speed0(angle, time)
     %find zero-distance-error for given angle 
     initial_guess = 40;
     speed0 = fzero(@(s) distance_error(s, angle), initial_guess);
