@@ -2,7 +2,6 @@ function error = time_error(desired_time, initial_speed_guess, angle)
     % Compute the error associated with actual time to hit piano vs.
     % desired time to hit piano
     
-    
     % when the angle is outside of 0 to 90 degrees (exclusive) the time error is infinite because
     % the penny will never hit the piano; which will confuse fzero and fminsearch
     % so we need to add a catch for this scenario
